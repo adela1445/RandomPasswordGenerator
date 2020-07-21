@@ -24,18 +24,6 @@ var splitSpChar = specialCharacter.split(" ");
 var splitLwrCase = lwrCase.split(" ");
 var splitUppCase = uppCase.split(" ");
 
-// Confirm options the user agrees to
-var confirmSpChar = confirm(
-  "Press 'OK' if you would like to use Special Characters?"
-);
-var confirmLwrCase = confirm(
-  "Press 'OK' if you would like to use Lower Case letters?"
-);
-var confirmUppCase = confirm(
-  "Press 'OK' if you would like to use Upper Case letters?"
-);
-var confirmNum = confirm("Press 'OK' if you would like to use numbers?");
-
 // User will be asked the password length
 function generatePassword() {
   var confirmLength = parseInt(
@@ -50,5 +38,37 @@ function generatePassword() {
         "Please choose the length of the password you would like for it to be."
       )
     );
+  }
+  // Confirm options the user agrees to
+  var confirmSpChar = confirm(
+    "Press 'OK' if you would like to use Special Characters?"
+  );
+  var confirmLwrCase = confirm(
+    "Press 'OK' if you would like to use Lower Case letters?"
+  );
+  var confirmUppCase = confirm(
+    "Press 'OK' if you would like to use Upper Case letters?"
+  );
+  var confirmNum = confirm("Press 'OK' if you would like to use Numbers?");
+  while (
+    confirmSpChar !== true &&
+    confirmLwrCase !== true &&
+    confirmUppCase !== true &&
+    confirmNum !== true
+  ) {
+    alert(
+      "Please confirm at least one of the following: 'Special Character', 'Lower Case', 'Upper Case' 'Numbers'"
+    );
+
+    var confirmSpChar = confirm(
+      "Press 'OK' if you would like to use Special Characters?"
+    );
+    var confirmLwrCase = confirm(
+      "Press 'OK' if you would like to use Lower Case letters?"
+    );
+    var confirmUppCase = confirm(
+      "Press 'OK' if you would like to use Upper Case letters?"
+    );
+    var confirmNum = confirm("Press 'OK' if you would like to use Numbers?");
   }
 }
