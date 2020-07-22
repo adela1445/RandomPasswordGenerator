@@ -38,3 +38,7 @@ Image shows the start of accessing site
 
 Prompt asks user the length of password
 <img src ="Assets\Password Generator_PassLength_Prompt.png" width ="250">
+
+# Short Video Clip
+
+<video src ="Assets\RandomPasswordGenerator_ShortClip.webm">
