@@ -6,7 +6,7 @@ generateBtn.addEventListener("click", writePassword);
 
 // Option StringArrays the user may choose from
 var number = "0123456789";
-var specialCharacter = "!#$%&*+-./:;<=>?@[]^_{|}~";
+var specialCharacter = "!#$%&*?@^_~";
 var lwrCase = "abcdefghijklmnopqrstuvwxyz";
 var uppCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
@@ -47,6 +47,13 @@ function generatePassword() {
     "Press 'OK' if you would like to use Upper Case letters?"
   );
   var confirmNum = confirm("Press 'OK' if you would like to use Numbers?");
+
+  // Ensuring code is working
+  console.log(confirmSpChar);
+  console.log(confirmLwrCase);
+  console.log(confirmUppCase);
+  console.log(confirmNum);
+
   while (
     confirmSpChar !== true &&
     confirmLwrCase !== true &&
@@ -60,6 +67,7 @@ function generatePassword() {
     var confirmSpChar = confirm(
       "Press 'OK' if you would like to use Special Characters?"
     );
+
     var confirmLwrCase = confirm(
       "Press 'OK' if you would like to use Lower Case letters?"
     );
