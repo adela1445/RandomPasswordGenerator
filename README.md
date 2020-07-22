@@ -30,3 +30,11 @@ User link to Repo - https://adela1445.github.io/RandomPasswordGenerator/
 GitHub link to Repo - https://github.com/adela1445/RandomPasswordGenerator
 
 # Images
+
+Below are screenshots of the site
+
+Image shows the start of accessing site
+<img src ="Assets\Password Generator_Homepage.png" width ="250">
+
+Prompt asks user the length of password
+<img src ="Assets\Password Generator_PassLength_Prompt.png" width ="250">
