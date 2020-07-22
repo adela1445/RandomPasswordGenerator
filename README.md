@@ -1,5 +1,11 @@
 # RandomPasswordGenerator
 
+# Description
+
+Users are able to use this file in order to generate a random password that meets specific criteria based on the depositions. it is intended to help the user create a safe secured password.
+
+# Criteria asked by Client
+
 ```
 GIVEN I need a new, secure password
 WHEN I click the button to generate a password
@@ -17,3 +23,10 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
+
+# Links to Repo
+
+User link to Repo - https://adela1445.github.io/RandomPasswordGenerator/
+GitHub link to Repo - https://github.com/adela1445/RandomPasswordGenerator
+
+# Images
