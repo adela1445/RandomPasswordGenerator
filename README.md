@@ -40,7 +40,7 @@ Prompt asks user the length of password
 <img src ="Assets\Password Generator_PassLength_Prompt.png" width ="900">
 
 Alerts users to try again if no options are selected or if the value is NaN
-<img src ="Assets\Password Generator_PassLength_TryAgain_Prompt.png" width ="900>
+<img src ="Assets\Password Generator_PassLength_TryAgain_Prompt.png" width ="900">
 
 Once users confirms options, a random password is generated
 
