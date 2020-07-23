@@ -34,11 +34,14 @@ GitHub link to Repo - https://github.com/adela1445/RandomPasswordGenerator
 Below are screenshots of the site
 
 Image shows the start of accessing site
-<img src ="Assets\Password Generator_Homepage.png" width ="250">
+<img src ="Assets\Password Generator_Homepage.png" width ="600">
 
 Prompt asks user the length of password
-<img src ="Assets\Password Generator_PassLength_Prompt.png" width ="250">
+<img src ="Assets\Password Generator_PassLength_Prompt.png" width ="600">
 
-# Short Video Clip
+Alerts users to try again if no options are selected or if the value is NaN
+<img src ="Assets\Password Generator_PassLength_TryAgain_Prompt.png" width ="600>
 
-<video src ="Assets\RandomPasswordGenerator_ShortClip.webm">
+Once users confirms options, a random password is generated
+
+<img src = "Assets\Password Generator_ConsoleLogs.png" width ="600">

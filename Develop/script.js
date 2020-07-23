@@ -28,9 +28,11 @@ function generatePassword() {
       "Please choose the length of the password you would like for it to be."
     )
   );
-  while (confirmLength <= 7 || confirmLength >= 129) {
-    alert("Please try again. Password must be between 8-128 characters long");
-    var confirmLength = parseInt(
+  while (confirmLength <= 7 || confirmLength >= 129 || isNaN(confirmLength)) {
+    alert(
+      "Please try again. The numeric value should be between 8-128 to determine the characters length"
+    );
+    confirmLength = parseInt(
       prompt(
         "Please choose the length of the password you would like for it to be."
       )
@@ -84,20 +86,18 @@ function generatePassword() {
   var randomPass = [];
 
   // Adding the characters based on user confirming
-  if (confirmSpChar == true) {
-    console.log(characterCont);
-
+  if (confirmSpChar) {
     characterCont = characterCont.concat(splitSpChar);
   }
-  if (confirmNum == true) {
+  if (confirmNum) {
     characterCont = characterCont.concat(splitNum);
   }
 
-  if (confirmUppCase == true) {
+  if (confirmUppCase) {
     characterCont = characterCont.concat(splitUppCase);
   }
 
-  if (confirmLwrCase == true) {
+  if (confirmLwrCase) {
     characterCont = characterCont.concat(splitLwrCase);
   }
 
@@ -107,7 +107,9 @@ function generatePassword() {
     randomPass =
       randomPass +
       characterCont[Math.floor(Math.random() * characterCont.length)];
+    console.log(randomPass);
   }
+
   return randomPass;
 }
 // Write password to the #password input
